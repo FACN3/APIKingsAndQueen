@@ -1,6 +1,8 @@
 'use strict;'
 //const secret = require("./secret.js");
 
+var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
+var apiNames = { movie : 'movie' , news : 'news'};
 function getData(url, ending) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -21,4 +23,13 @@ function buildUrl(query,apiName){
     default : break;
     }
 }
+
+document.getElementById('search-btn').addEventListener('click', function(){
+    var searchMovieName = document.getElementById('search-query').value;
+  var url = buildUrl(searchMovieName,apiNames.movie);
+})
+
+
+
+
 //  module.exports = {buildUrl};
