@@ -12,11 +12,11 @@ var apiNames = {
   news: 'news'
 };
 
-function sendApiRequest(url) {
+function sendApiRequest(url,callback) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      return JSON.parse(xhr.responseText);
+      return callback(JSON.parse(xhr.responseText));
     }
   }
   xhr.open("GET", url, true);
