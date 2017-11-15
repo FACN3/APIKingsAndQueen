@@ -1,9 +1,10 @@
 'use strict;'
 
-if (typeof(module) == undefined) {
+
+//const secret = require("./secret.js");
+ if (typeof(module) == undefined) {
 const secret = require("./secret.js");
 };
-
 
 //var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
 var apiNames = {
@@ -45,8 +46,11 @@ function buildUrl(query, apiName) {
 
 
 
+
 if (typeof(module) == undefined) {
   module.exports = {
     buildUrl
   };
 }
+
+
