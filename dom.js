@@ -8,13 +8,13 @@ function movieApiCallback(apiResult){
     var titleText = document.createTextNode(movieItem.original_title);
     title.appendChild(titleText);
     article.appendChild(title);
-    resultDiv.appendChild(article);    
-  })
+    resultDiv.appendChild(article);
+  });
 }
 
 function newsApiCallback(apiResult){
   apiResult = apiResult.response.results;
-  var resultDiv = document.getElementById('searchResults');
+  var resultDiv = document.getElementById('searchResults2');
   apiResult.forEach(function(newsItem) {
   var article = document.createElement('article');
   var title = document.createElement('h2')
@@ -23,15 +23,14 @@ function newsApiCallback(apiResult){
   article.appendChild(title);
   resultDiv.appendChild(article);
 });
-  var movieApiResult = sendApiRequest(
-    buildUrl(document.getElementById('search-query').value, 'movie') 
-     ,movieApiCallback);
 }
+
  document.getElementById('search-btn')
  .addEventListener('click', function() {
   var newsApiResult = sendApiRequest(
     buildUrl(document.getElementById('search-query').value, 'news')
     , newsApiCallback);
+  var movieApiResult = sendApiRequest(
+    buildUrl(document.getElementById('search-query').value, 'movie')
+     ,movieApiCallback);
  });
-
-

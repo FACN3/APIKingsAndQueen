@@ -1,5 +1,14 @@
 
 body ,main{
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchResults {
+  border: solid red;
+}
+
+#searchResults2 {
+  border: solid blue;
 }
