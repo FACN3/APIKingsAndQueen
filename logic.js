@@ -30,11 +30,9 @@ function buildUrl(query, apiName) {
 }
 
 
-module.exports = {
+
+if (typeof(module) == undefined) {
+  module.exports = {
     buildUrl
   };
-// if (typeof(module) == undefined) {
-//   module.exports = {
-//     buildUrl
-//   };
-// }
+}
