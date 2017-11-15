@@ -20,18 +20,17 @@
 //       xhr.send();
 //     })
 
- document.getElementById('search-btn').addEventListener('click', function() {
-   console.log(buildUrl(document.getElementById('search-query').value, 'news'))
-  var newsApiResult = sendApiRequest(buildUrl(document.getElementById('search-query').value, 'news'));
-  // if(newsApiResult){
-  //   console.log(newsApiResult.response.results);
-  // }
-
-  // function filterResult(item) {
-  //   if ()
-  // }
+function handlemovieapi(){
+  console.log('works');
+}
+ document.getElementById('search-btn')
+ .addEventListener('click', function() {
+  var newsApiResult = sendApiRequest(
+    buildUrl(document.getElementById('search-query').value, 'news')
+    , handlemovieapi);
  });
 
- function handleNewsApiResult (apiResult) {
-   api.response.result
- }
+//  function handlenewsapi(){}
+//  function handleNewsApiResult (apiResult) {
+//    api.response.result
+//  }
