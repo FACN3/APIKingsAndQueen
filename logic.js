@@ -1,19 +1,22 @@
 'use strict;'
+
+
 //const secret = require("./secret.js");
  if (typeof(module) == undefined) {
 const secret = require("./secret.js");
 };
+
 //var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
 var apiNames = {
   movie: 'movie',
   news: 'news'
 };
 
-function getData(url) {
+function sendApiRequest(url) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      return (JSON.parse(xhr.responseText));
+      return JSON.parse(xhr.responseText);
     }
   }
   xhr.open("GET", url, true);
@@ -31,8 +34,23 @@ function buildUrl(query, apiName) {
   }
 }
 
-// if (typeof(module) == undefined) {
-//   module.exports = {
-//     buildUrl
-//   };
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (typeof(module) == undefined) {
+  module.exports = {
+    buildUrl
+  };
+}
+
+
