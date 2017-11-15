@@ -1,6 +1,8 @@
 'use strict;'
 //const secret = require("./secret.js");
-
+ if (typeof(module) == undefined) {
+const secret = require("./secret.js");
+};
 //var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
 var apiNames = {
   movie: 'movie',
@@ -30,9 +32,6 @@ function buildUrl(query, apiName) {
 }
 
 
-module.exports = {
-    buildUrl
-  };
 // if (typeof(module) == undefined) {
 //   module.exports = {
 //     buildUrl
