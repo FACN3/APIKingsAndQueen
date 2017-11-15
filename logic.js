@@ -1,13 +1,14 @@
 'use strict;'
 //const secret = require("./secret.js");
 
-var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
+//var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
 var apiNames = { movie : 'movie' , news : 'news'};
-function getData(url, ending) {
+
+function getData(url) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            return (JSON.parse(xhr.responseText).ending);
+            return (JSON.parse(xhr.responseText));
         }
     }
     xhr.open("GET", url, true);
@@ -30,6 +31,6 @@ document.getElementById('search-btn').addEventListener('click', function(){
 })
 
 
-
-
-//  module.exports = {buildUrl};
+if (typeof (module) == undefined){
+  module.exports = {buildUrl};
+}
