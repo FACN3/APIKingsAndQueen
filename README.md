@@ -5,13 +5,8 @@ news atrticles from the gardian web site.<br>
 
 ## How to use
 
-Clone this repository
-~~~
+##Clone this repository
 $ git clone https://github.com/FACN3/APIKingsAndQueen.git
-~~~
 $ npm install
-~~~
-Run the tests
-~~~
+ ##Run the tests
 $ node test.js
-~~~
