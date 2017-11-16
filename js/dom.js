@@ -1,5 +1,6 @@
 
 
+
 function movieApiCallback(apiResult){
   apiResult = apiResult.results;
   var resultDiv = document.getElementById('movie-result');
@@ -44,4 +45,3 @@ function newsApiCallback(apiResult) {
 }
 return element;
  }
-
