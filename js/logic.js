@@ -1,6 +1,14 @@
 'use strict;'
+<<<<<<< HEAD:logic.js
+
+
+//const secret = require("./secret.js");
+if (typeof(module) == undefined) {
+  const secret = require("./secret.js");
+=======
 if (typeof (module) == undefined) {
   const secret = require("./js/secret.js");
+>>>>>>> master:js/logic.js
 };
 
 var apiNames = {
