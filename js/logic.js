@@ -42,14 +42,8 @@ function buildUrl(query, apiName) {
 
 
 if (typeof module !== 'undefined') {
-<<<<<<< HEAD:js/logic.js
   module.exports =
     { buildUrl }
-=======
-  module.exports = {
-
-    buildUrl};
->>>>>>> master:logic.js
 };
 
 
