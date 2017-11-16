@@ -2,8 +2,8 @@
 
 
 //const secret = require("./secret.js");
- if (typeof(module) == undefined) {
-const secret = require("./secret.js");
+if (typeof(module) == undefined) {
+  const secret = require("./secret.js");
 };
 
 //var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
@@ -12,7 +12,7 @@ var apiNames = {
   news: 'news'
 };
 
-function sendApiRequest(url,callback) {
+function sendApiRequest(url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
