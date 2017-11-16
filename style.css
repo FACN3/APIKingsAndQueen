@@ -1,14 +1,45 @@
 
-body ,main{
+body ,main, section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #searchResults {
-  border: solid red;
+  border: solid rgb(84,150,182);
+  background-color: rgb(84,150,182);
+  color: #f1f1f1;
+  margin-top: 60px;
+  padding-left: 10px;
+  width: 70vw;
 }
 
 #searchResults2 {
-  border: solid blue;
+  border: solid rgb(118,176,153);
+  background-color: rgb(118,176,153);
+  color: #f1f1f1;
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 70vw
+}
+
+#search-query {
+  width : 200px;
+  height: 30px;
+  padding-right: : 50px;
+}
+
+#search-btn {
+  width: 50px;
+  height: 30px;
+}
+
+#searchBox {
+  position: absolute;
+  top: 80px;
+}
+
+header {
+  color: rgb(239,161,108);
 }
