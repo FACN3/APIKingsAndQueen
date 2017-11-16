@@ -2,6 +2,7 @@
 function movieApiCallback(apiResult){
   apiResult = apiResult.results;
   var resultDiv = document.getElementById('movie-result');
+  resultDiv = clearChildElements(resultDiv);
   apiResult.forEach(function(movieItem) {
     var article = document.createElement('article');
     var title = document.createElement('h2')
@@ -15,6 +16,7 @@ function movieApiCallback(apiResult){
 function newsApiCallback(apiResult){
   apiResult = apiResult.response.results;
   var resultDiv = document.getElementById('news-result');
+  resultDiv = clearChildElements(resultDiv);
   apiResult.forEach(function(newsItem) {
   var article = document.createElement('article');
   var title = document.createElement('h2')
@@ -34,3 +36,10 @@ function newsApiCallback(apiResult){
     buildUrl(document.getElementById('search-query').value, 'movie')
      ,movieApiCallback);
  });
+
+ function clearChildElements (element){
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+}
+return element;
+ }
