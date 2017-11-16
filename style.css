@@ -1,8 +1,15 @@
 
-body ,main{
+body ,main .inputSection{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.searchResults{
+    display: flex;
+    flex-direction: column;
 }
 
 #searchResults {
