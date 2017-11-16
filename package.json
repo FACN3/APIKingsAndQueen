@@ -4,7 +4,7 @@
   "description": "API test app",
   "main": "logic.js",
   "scripts": {
-    "test": "tape logic.test.js | tap-spec"
+    "test": "tape js/tests/logic.test.js | tap-spec"
   },
   "keywords": [],
   "author": "",
