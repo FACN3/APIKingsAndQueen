@@ -1,3 +1,4 @@
+<<<<<<< HEAD:dom.js
 //
 // document.getElementById('search-btn').addEventListener('click', function() {
 //   var searchMovieName = document.getElementById('search-query').value;
@@ -22,6 +23,10 @@
 
 
 function movieApiCallback(apiResult) {
+=======
+
+function movieApiCallback(apiResult){
+>>>>>>> master:js/dom.js
   apiResult = apiResult.results;
   var resultDiv = document.getElementById('movie-result');
   apiResult.forEach(function(movieItem) {

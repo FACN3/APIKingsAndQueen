@@ -1,12 +1,16 @@
 'use strict;'
+<<<<<<< HEAD:logic.js
 
 
 //const secret = require("./secret.js");
 if (typeof(module) == undefined) {
   const secret = require("./secret.js");
+=======
+if (typeof (module) == undefined) {
+  const secret = require("./js/secret.js");
+>>>>>>> master:js/logic.js
 };
 
-//var apiHeaders = {movieUrl : 'result',newsUrl : 'response' }
 var apiNames = {
   movie: 'movie',
   news: 'news'
@@ -14,7 +18,7 @@ var apiNames = {
 
 function sendApiRequest(url, callback) {
   var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       return callback(JSON.parse(xhr.responseText));
     }
@@ -37,8 +41,15 @@ function buildUrl(query, apiName) {
 
 
 
-if (typeof(module) == undefined) {
+if (typeof module !== 'undefined') {
+<<<<<<< HEAD:js/logic.js
+  module.exports =
+    { buildUrl }
+=======
   module.exports = {
-    buildUrl
-  };
-}
+
+    buildUrl};
+>>>>>>> master:logic.js
+};
+
+
