@@ -5,7 +5,7 @@ body ,main, section {
   flex-direction: column;
 }
 
-#searchResults {
+#movie-result {
   border: solid rgb(84,150,182);
   background-color: rgb(84,150,182);
   color: #f1f1f1;
@@ -14,7 +14,7 @@ body ,main, section {
   width: 70vw;
 }
 
-#searchResults2 {
+#news-result {
   border: solid rgb(118,176,153);
   background-color: rgb(118,176,153);
   color: #f1f1f1;

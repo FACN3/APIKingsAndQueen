@@ -35,6 +35,8 @@ function buildUrl(query, apiName) {
 
 if (typeof module !== 'undefined') {
   module.exports = {
+
     buildUrl};
 };
+
 

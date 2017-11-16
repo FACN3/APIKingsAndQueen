@@ -1,7 +1,7 @@
 
 function movieApiCallback(apiResult){
   apiResult = apiResult.results;
-  var resultDiv = document.getElementById('searchResults');
+  var resultDiv = document.getElementById('movie-result');
   apiResult.forEach(function(movieItem) {
     var article = document.createElement('article');
     var title = document.createElement('h2')
@@ -14,7 +14,7 @@ function movieApiCallback(apiResult){
 
 function newsApiCallback(apiResult){
   apiResult = apiResult.response.results;
-  var resultDiv = document.getElementById('searchResults2');
+  var resultDiv = document.getElementById('news-result');
   apiResult.forEach(function(newsItem) {
   var article = document.createElement('article');
   var title = document.createElement('h2')
