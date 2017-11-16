@@ -8,7 +8,6 @@ test("tape is working", function (t) {
 });
 
 test("URL should be generated correctly", function (t) {
-   console.log(logic);
     let actual = logic.buildUrl('obama','news');
     let expected = 'https://content.guardianapis.com/search?q=obama&api-key=' + secret.newsKey;
     t.equals(actual, expected, "obama searched on guardian");
