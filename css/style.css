@@ -9,8 +9,8 @@ body ,main, section {
   border: solid rgb(84,150,182);
   background-color: rgb(84,150,182);
   color: #f1f1f1;
-  margin-top: 60px;
-  padding-left: 10px;
+  margin-top: 4em;
+  padding-left: 1em;
   width: 70vw;
 }
 
@@ -18,26 +18,26 @@ body ,main, section {
   border: solid rgb(118,176,153);
   background-color: rgb(118,176,153);
   color: #f1f1f1;
-  margin-top: 10px;
-  padding-left: 10px;
+  margin-top: 1.5em;
+  padding-left: 1em;
   width: 70vw
 }
 
 
 #search-query {
-  width : 200px;
-  height: 30px;
-  padding-right: : 50px;
+  width : 22em;
+  height: 3em;
+
 }
 
 #search-btn {
-  width: 50px;
-  height: 30px;
+  width: 5em;
+  height: 3em;
 }
 
 #searchBox {
   position: absolute;
-  top: 80px;
+  top: 5.5em;
 }
 
 header {
