@@ -1,6 +1,6 @@
 'use strict;'
- if (typeof(module) == undefined) {
-const secret = require("./secret.js");
+if (typeof (module) == undefined) {
+  const secret = require("./js/secret.js");
 };
 
 var apiNames = {
@@ -8,9 +8,9 @@ var apiNames = {
   news: 'news'
 };
 
-function sendApiRequest(url,callback) {
+function sendApiRequest(url, callback) {
   var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       return callback(JSON.parse(xhr.responseText));
     }
@@ -34,7 +34,7 @@ function buildUrl(query, apiName) {
 
 
 if (typeof module !== 'undefined') {
-  module.exports = {
-    buildUrl};
+  module.exports =
+    { buildUrl }
 };
 

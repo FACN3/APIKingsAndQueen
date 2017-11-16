@@ -1,6 +1,6 @@
 const test = require("tape");
-const logic = require("./logic.js");
-const secret = require("./secret.js");
+const logic = require("../logic.js");
+const secret = require("../secret.js");
 
 test("tape is working", function (t) {
     t.equals(1, 1, "one equals one");
