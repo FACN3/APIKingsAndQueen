@@ -42,4 +42,3 @@ if (typeof(module) == undefined) {
     buildUrl
   };
 }
-
